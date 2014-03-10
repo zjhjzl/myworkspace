@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Students>
+	<!--mysql>
+		<url>jdbc:mysql://localhost:3306/btcrobot</url>
+		<user>root</user>
+		<pwd>123456</pwd>
+	</mysql-->
+	<mysql>
+		<url>jdbc:mysql://115.29.140.207:3306/btcrobot</url>
+		<user>root</user>
+		<pwd>Glzzjh@123</pwd>
+	</mysql>
+</Students>

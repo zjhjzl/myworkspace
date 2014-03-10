@@ -1,0 +1,35 @@
+08:54:28:146 10644  connect server, address:127.0.0.1, port:7712.
+08:54:28:147 10644  _CfsChannel::Send connecting or disconnecting
+08:54:29:153 10644  socket occur any error,event:0, error:10061, state:1.
+08:54:29:153 10644  connect server failed.
+08:54:29:153 10644  CfsChannel::Disconnect...............0
+08:54:29:153 10644  CfsChannel::Disconnect...............1
+08:54:29:153 10644  CfsChannel::Disconnect...............2
+08:54:29:153 10644  CfsChannel::Disconnect...............3
+08:54:29:153 10644  CfsChannel::Disconnect...............4
+08:54:29:353 10644  CfsChannel::CheckTimeOut state:0
+08:54:29:353 10644  CfsChannel::Disconnect...............0
+08:54:29:354 10644  connect server, address:127.0.0.1, port:7712.
+08:54:30:367 10644  socket occur any error,event:0, error:10061, state:1.
+08:54:30:367 10644  connect server failed.
+08:54:30:367 10644  CfsChannel::Disconnect...............0
+08:54:30:367 10644  CfsChannel::Disconnect...............1
+08:54:30:367 10644  CfsChannel::Disconnect...............2
+08:54:30:367 10644  CfsChannel::Disconnect...............3
+08:54:30:367 10644  CfsChannel::Disconnect...............4
+08:54:30:584 10644  CfsChannel::CheckTimeOut state:0
+08:54:30:584 10644  CfsChannel::Disconnect...............0
+08:54:30:585 10644  connect server, address:127.0.0.1, port:7712.
+08:54:31:594 10644  socket occur any error,event:0, error:10061, state:1.
+08:54:31:594 10644  connect server failed.
+08:54:31:594 10644  CfsChannel::Disconnect...............0
+08:54:31:594 10644  CfsChannel::Disconnect...............1
+08:54:31:594 10644  CfsChannel::ReleaseSendPackets,error:2
+08:54:31:594 10644  CfsChannel::Disconnect...............2
+08:54:31:594 10644  CfsChannel::Disconnect...............3
+08:54:31:594 10644  CfsChannel::Disconnect...............4
+08:54:31:794 10644  CfsChannel::CheckTimeOut state:0
+08:54:31:794 10644  CfsChannel::Disconnect...............0
+08:54:41:914 10644  CfsSocketEventLoop error 735..........
+08:54:41:914 10644  CfsSocketEventLoop end.............
+08:54:44:914 03512  CfsChannel::Disconnect...............0

@@ -1,0 +1,40 @@
+DELETE FROM `btcrobot`.`kline1min`;
+DELETE FROM `btcrobot`.`kline1minma5`;
+DELETE FROM `btcrobot`.`kline1minma10`;
+DELETE FROM `btcrobot`.`kline1minma20`;
+DELETE FROM `btcrobot`.`kline1minma30`;
+DELETE FROM `btcrobot`.`kline1minma60`;
+
+select count(*) as kline1min FROM `btcrobot`.`kline1min`;
+select count(*) as ma5 FROM `btcrobot`.`kline1minma5`;
+select count(*) as ma10 FROM `btcrobot`.`kline1minma10`;
+select count(*) as ma20 FROM `btcrobot`.`kline1minma20`;
+select count(*) as ma30 FROM `btcrobot`.`kline1minma30`;
+select count(*) as ma60 FROM `btcrobot`.`kline1minma60`;
+
+CREATE TABLE `btcrobot`.`kline5min` (
+  `date` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `time` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `oprice` decimal(10,2) NOT NULL,
+  `hprice` decimal(10,2) NOT NULL,
+  `lprice` decimal(10,2) NOT NULL,
+  `cprice` decimal(10,2) NOT NULL,
+  `volume` decimal(20,8) NOT NULL,
+  `amount` decimal(20,8) NOT NULL,
+  `id` bigint(20) NOT NULL,
+  `ex2` varchar(30) CHARACTER SET latin1 NOT NULL,
+  `ex3` varchar(30) CHARACTER SET latin1 NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin
+
+
+CREATE TABLE `btcrobot`.`kline5minma5` (
+  `id` bigint(20) NOT NULL,
+  `value` decimal(20,8) DEFAULT NULL,
+  `date` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `time` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `ext` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `ext2` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  `ext3` varchar(45) CHARACTER SET latin1 DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin

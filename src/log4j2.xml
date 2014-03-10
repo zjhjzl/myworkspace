@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF">
+	<appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+		<SMTP name="Mail" subject="Error Log" to="1073990269@qq.com"
+			from="13426324406@139.com" smtpUsername="13426324406@139.com"
+			smtpPassword="ZJHJZL" smtpHost="smtp.139.com" smtpPort="25">
+		</SMTP>
+		<!-- RandomAccessFile name="MyFile" fileName="c:/logs/app.log"-->
+		<RandomAccessFile name="MyFile" fileName="/home/logs/app.log">
+			<PatternLayout>
+				<Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="50MB" />
+			</Policies>
+		</RandomAccessFile>
+		<RollingRandomAccessFile name="DevLog"
+			fileName="logs/app2.log" filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout>
+				<Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="5KB" />
+			</Policies>
+		</RollingRandomAccessFile>
+	</appenders>
+
+	<loggers>
+		<logger name="Fetal" level="error" additivity="false">
+			<appender-ref ref="Mail" />
+			<appender-ref ref="Console" />
+			<appender-ref ref="MyFile" />
+		</logger>
+		<root level="error">
+			<appender-ref ref="MyFile" />
+			<appender-ref ref="Console" />
+		</root>
+	</loggers>
+
+</configuration>
