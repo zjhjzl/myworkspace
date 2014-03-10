@@ -192,7 +192,7 @@ public class MaTools {
 	 * @return 时间点列表，格式yyyyMMddHHmmss，晚的时间点在前面
 	 */
 
-	private ArrayList<Long> getAllCloseTimePoints(long klineTimeSpan, long beginTime, long endTime){
+	public ArrayList<Long> getAllCloseTimePoints(long klineTimeSpan, long beginTime, long endTime){
 		ArrayList<Long> allCloseTimePoints = new ArrayList<Long>();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
 		Calendar calendar = Calendar.getInstance();

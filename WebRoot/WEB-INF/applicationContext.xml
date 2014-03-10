@@ -69,17 +69,27 @@
 
 	<bean name="MaDao" class="com.btcrobot.ma.MaDaoImpl">
 		<property name="dataSource" ref="dataSourceDev"></property>
-		<!-- property name="dataSource" ref="dataSourceServer"></property-->
+		<!-- property name="dataSource" ref="dataSourceServer"></property -->
 	</bean>
 
 	<bean name="TradeDao" class="com.btctools.dao.TradeDao">
 		<property name="dataSource" ref="dataSourceDev"></property>
-		<!-- property name="dataSource" ref="dataSourceServer"></property-->
+		<!-- property name="dataSource" ref="dataSourceServer"></property -->
+	</bean>
+
+	<bean name="MinKlineMaker" class="com.btcrobot.ma.MinKlineMaker">
+		<property name="dataSource" ref="dataSourceDev"></property>
+		<!-- property name="dataSource" ref="dataSourceServer"></property -->
+	</bean>
+
+	<bean name="MinKlineMakerRunner" class="com.btcrobot.ma.MinKlineMakerRunner">
+		<property name="dataSource" ref="dataSourceDev"></property>
+		<!-- property name="dataSource" ref="dataSourceServer"></property -->
 	</bean>
 
 	<bean name="TradeConsumer" class="com.btcrobot.runner.TradeConsumer">
 		<property name="dataSource" ref="dataSourceDev"></property>
-		<!-- property name="dataSource" ref="dataSourceServer"></property-->
+		<!-- property name="dataSource" ref="dataSourceServer"></property -->
 	</bean>
 
 	<bean name="Tools" class="com.btctools.trade.Tools">
