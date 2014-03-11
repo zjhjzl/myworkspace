@@ -200,13 +200,13 @@ public class MinKlineMakerRunner extends Thread{
 
 		System.out.println("线程1 启动......");
 		MinKlineMakerRunner minKlineMakerRunner1 = new MinKlineMakerRunner();
-		minKlineMakerRunner1.setBeginTimeString("2014年01月03日-20:53:00");
+		minKlineMakerRunner1.setBeginTimeString("2014年01月16日-15:46:00");
 		minKlineMakerRunner1.setDataSource(dataSource);
 		minKlineMakerRunner1.start();
 
 		System.out.println("线程2 启动......");
 		MinKlineMakerRunner minKlineMakerRunner2 =  new MinKlineMakerRunner();
-		minKlineMakerRunner2.setBeginTimeString("2014年02月01日-19:06:00");
+		minKlineMakerRunner2.setBeginTimeString("2014年02月15日-03:18:00");
 		minKlineMakerRunner2.setDataSource(dataSource);
 		minKlineMakerRunner2.start();
 		//			
